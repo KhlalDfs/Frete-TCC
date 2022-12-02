@@ -181,6 +181,7 @@
                                             <?php  echo "<td><a href='deletePed.php?id=$rows_users[idPed]' style='color: red'>"?><i class="fa-solid fa-trash"></i></a></td>
                                         </tr>
                                     <?php } ?>
+                                    <button><a href="pressRelPed.php?id=$rows_users[idPed]">Imprimir Relatório</a></button>
                                 </tbody>
                             </table>
                         </div>

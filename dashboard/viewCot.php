@@ -162,6 +162,7 @@
                                             <?php  echo "<td><a href='deleteCot.php?id=$rows_users[idCot]' style='color: red'>"?><i class="fa-solid fa-trash"></i></a></td>
                                         </tr>
                                     <?php }?>
+                                    <button><a href="pressRelCot.php?id=$rows_users[idCot]">Imprimir Relatório</a></button>
                                 </tbody>
                             </table>
                         </div>
