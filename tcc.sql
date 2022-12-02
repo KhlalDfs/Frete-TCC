@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Dez-2022 às 20:51
+-- Tempo de geração: 02-Dez-2022 às 20:07
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 7.4.27
 
@@ -72,7 +72,8 @@ INSERT INTO `cotacao` (`idCot`, `cepOrigem`, `cepDestino`, `valor`, `peso`, `com
 (346, 87043585, 86690000, 225, 20, 20, 20, 20, '40010', 290, '129,43', 3, 'Frete'),
 (347, 87043585, 86690000, 225, 20, 20, 20, 20, '40010', 290, '129,43', 3, 'Frete'),
 (348, 87043585, 86690000, 222, 20, 20, 20, 20, '41106', 289, '109,67', 5, 'Expresso'),
-(349, 87043585, 86690000, 362, 30, 20, 30, 20, '40010', 289, '202,17', 3, 'Expresso');
+(349, 87043585, 86690000, 362, 30, 20, 30, 20, '40010', 289, '202,17', 3, 'Expresso'),
+(350, 87043585, 86690000, 100, 20, 20, 20, 20, '40010', 288, '126,93', 3, 'Douglas');
 
 -- --------------------------------------------------------
 
@@ -258,10 +259,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `email`, `telefone`, `cpf`, `cep`, `tipo`, `senha`, `endereco`, `dataNascimento`) VALUES
-(287, 'Douglas F', 'souza@gmail.com', '(44) 44444-4444', '000.000.000-00', '44444-444', 'A', 'aaa', 'Rua 2', '10/05/1995'),
-(288, 'Douglas', 'a@a.com', '(44) 99720-0505', '444.444.444-44', '87043-585', 'T', 'aaa', 'Rua Rio Içá', '99/99/9999'),
-(289, 'Expresso', 'dd@gmail.com', '(44) 44444-4444', '036.124.430-46', '44444-444', 'E', 'aaa', 'Rua', '10/05/1995'),
-(290, 'Frete', 'ddoghlas@gmail.com', '(44) 44444-4444', '036.124.430-46', '44444-444', 'T', 'aaa', 'Rua', '10/05/1995'),
+(287, 'DF', 'souza@gmail.com', '(44) 44444-4444', '000.000.000-00', '44444-444', 'A', 'aaa', 'Rua 2', '10/05/1995'),
+(288, 'D', 'a@a.com', '(44) 99720-0505', '444.444.444-44', '87043-585', 'T', 'aaa', 'Rua Rio Içá', '99/99/9999'),
+(289, 'Expresso', 'dd@gmail.com', '(44) 44444-4444', '444.444.444-44', '44444-444', 'E', 'aaa', 'Rua', '10/05/1995'),
+(290, 'Teste', 'teste@gmail.com', '(44) 44444-4444', '444.444.444-44', '44444-444', 'A', 'teste', 'Rua', '10/05/1995'),
 (291, 'Ybat', 'd@d.com', '(66) 66666-6666', '222.222.222-22', '66666-666', 'C', 'aaa', '66', '55/55/5555');
 
 -- --------------------------------------------------------
@@ -351,7 +352,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT de tabela `cotacao`
 --
 ALTER TABLE `cotacao`
-  MODIFY `idCot` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=350;
+  MODIFY `idCot` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=351;
 
 --
 -- AUTO_INCREMENT de tabela `empresa`
